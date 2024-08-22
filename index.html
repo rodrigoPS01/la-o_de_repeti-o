@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+</head>
+<body>
+    <h1>Calculadora de Notas</h1>
+    
+    <label for="num_estudantes">Número de estudantes:</label>
+    <input type="number" id="num_estudantes" min="1">
+    <button id="botao_num_estudantes">Iniciar</button>
+    
+    <div id="notas" style="display:none;">
+        <h2>Insira as notas dos alunos</h2>
+        <div id="coletar_notas"></div>
+        <button id="botao_calcular">Calcular Estatísticas</button>
+    </div>
+
+    <div id="resultados" style="display:none;">
+        <h2>Resultados</h2>
+        <p id="media"></p>
+        <p id="maior_nota"></p>
+        <p id="menor_nota"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
